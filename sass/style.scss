@@ -1,0 +1,25 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #607D8B;
+	color: grey;
+	width: 100%;
+	margin: 0;
+
+	.controls {
+		font-size: 30px;
+	}
+
+	.results {
+		font-size: 60px;
+		color: grey;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-weight: 600;
+		margin: 0 20px;
+	}
+}

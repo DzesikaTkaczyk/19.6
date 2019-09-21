@@ -1,0 +1,29 @@
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #607D8B;
+  color: grey;
+  width: 100%;
+  margin: 0;
+}
+
+body .controls {
+  font-size: 30px;
+}
+
+body .results {
+  font-size: 60px;
+  color: grey;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  margin: 0 20px;
+}
+/*# sourceMappingURL=style.prefixed.css.map */
