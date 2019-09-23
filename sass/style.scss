@@ -6,14 +6,20 @@ body {
 	color: grey;
 	width: 100%;
 	margin: 0;
+	flex-wrap: wrap;
 
 	.controls {
 		font-size: 30px;
+		width: 100%;
+		text-align: center;
+		margin-top: 50px;
 	}
 
-	.results {
+	.stopwatch {
 		font-size: 60px;
-		color: grey;
+		color: #D3D3D3;	
+		width: 100%;
+		text-align: center;
 	}
 
 	a {
