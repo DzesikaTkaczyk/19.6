@@ -4,11 +4,17 @@
   "description": "stoper",
   "main": "index.js",
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "babel-standalone": "^6.26.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
     "autoprefixer-cli": "^1.0.0",
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
