@@ -23,11 +23,22 @@ body .stopwatch {
   text-align: center;
 }
 
-body a {
+body button {
   text-decoration: none;
-  color: white;
-  font-weight: 600;
+  color: lightgray;
   margin: 0 20px;
+  background-color: #607D8B;
+  padding: 6px 10px;
+  font-size: 18px;
+}
+
+body button:hover {
+  color: white;
+  border-color: white;
+}
+
+body button:focus {
+  outline: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

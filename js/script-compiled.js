@@ -126,13 +126,11 @@ function (_React$Component) {
           minutes = _this$state2.minutes;
       return React.createElement("div", null, React.createElement("div", {
         className: "controls"
-      }, React.createElement("a", {
-        href: "#",
+      }, React.createElement("button", {
         onClick: function onClick() {
           return _this3.start();
         }
-      }, "Start"), React.createElement("a", {
-        href: "#",
+      }, "Start"), React.createElement("button", {
         onClick: function onClick() {
           return _this3.stop();
         }

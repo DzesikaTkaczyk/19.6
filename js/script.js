@@ -25,7 +25,7 @@ class Stopwatch extends React.Component {
 	};
 
 	calculate() {
-		let{miliseconds, seconds, minutes} = this.state;
+		let { miliseconds, seconds, minutes } = this.state;
 		miliseconds = miliseconds + 1;
 		if (miliseconds >= 100) {
 			seconds += 1;
@@ -52,7 +52,7 @@ class Stopwatch extends React.Component {
 	};
 
 	stop() {
-		this.running= false;
+		this.running = false;
 		clearInterval(this.watch);
 	};
 
@@ -71,8 +71,8 @@ class Stopwatch extends React.Component {
 		return (
 			<div>
 				<div className="controls">
-					<a href="#" onClick={() => this.start()}>Start</a>
-					<a href="#" onClick={() => this.stop()}>Stop</a>
+					<button onClick={() => this.start()}>Start</button>
+					<button onClick={() => this.stop()}>Stop</button>
 				</div>
 				<div className="stopwatch">
 					{this.format({
