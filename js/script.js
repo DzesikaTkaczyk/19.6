@@ -25,7 +25,10 @@ class Stopwatch extends React.Component {
 	};
 
 	calculate() {
-		let { miliseconds, seconds, minutes } = this.state;
+		const stateCopy = [ this.state.miliseconds, this.state.seconds, this.state.minutes ];
+		let miliseconds  = stateCopy[0];
+		let seconds = stateCopy[1];
+		let minutes = stateCopy[2];
 		miliseconds = miliseconds + 1;
 		if (miliseconds >= 100) {
 			seconds += 1;
@@ -67,7 +70,7 @@ class Stopwatch extends React.Component {
 	};
 
 	render(){
-		let { miliseconds, seconds, minutes } = this.state;
+		const { miliseconds, seconds, minutes } = this.state;
 		return (
 			<div>
 				<div className="controls">

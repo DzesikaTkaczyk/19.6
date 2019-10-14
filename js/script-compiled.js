@@ -65,10 +65,10 @@ function (_React$Component) {
   }, {
     key: "calculate",
     value: function calculate() {
-      var _this$state = this.state,
-          miliseconds = _this$state.miliseconds,
-          seconds = _this$state.seconds,
-          minutes = _this$state.minutes;
+      var stateCopy = [this.state.miliseconds, this.state.seconds, this.state.minutes];
+      var miliseconds = stateCopy[0];
+      var seconds = stateCopy[1];
+      var minutes = stateCopy[2];
       miliseconds = miliseconds + 1;
 
       if (miliseconds >= 100) {
@@ -120,10 +120,10 @@ function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
-      var _this$state2 = this.state,
-          miliseconds = _this$state2.miliseconds,
-          seconds = _this$state2.seconds,
-          minutes = _this$state2.minutes;
+      var _this$state = this.state,
+          miliseconds = _this$state.miliseconds,
+          seconds = _this$state.seconds,
+          minutes = _this$state.minutes;
       return React.createElement("div", null, React.createElement("div", {
         className: "controls"
       }, React.createElement("button", {
