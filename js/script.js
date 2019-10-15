@@ -25,10 +25,9 @@ class Stopwatch extends React.Component {
 	};
 
 	calculate() {
-		const stateCopy = [ this.state.miliseconds, this.state.seconds, this.state.minutes ];
-		let miliseconds  = stateCopy[0];
-		let seconds = stateCopy[1];
-		let minutes = stateCopy[2];
+		let miliseconds  = this.state.miliseconds;
+		let seconds = this.state.seconds;
+		let minutes = this.state.minutes;
 		miliseconds = miliseconds + 1;
 		if (miliseconds >= 100) {
 			seconds += 1;

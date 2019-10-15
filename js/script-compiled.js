@@ -65,10 +65,9 @@ function (_React$Component) {
   }, {
     key: "calculate",
     value: function calculate() {
-      var stateCopy = [this.state.miliseconds, this.state.seconds, this.state.minutes];
-      var miliseconds = stateCopy[0];
-      var seconds = stateCopy[1];
-      var minutes = stateCopy[2];
+      var miliseconds = this.state.miliseconds;
+      var seconds = this.state.seconds;
+      var minutes = this.state.minutes;
       miliseconds = miliseconds + 1;
 
       if (miliseconds >= 100) {
